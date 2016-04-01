@@ -17,7 +17,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        systemComponent.inject(this);
+        getSystemComponent().inject(this);
         boolean activeNetworkMetered = connectivityManager.isActiveNetworkMetered();
         logger.log("Network is metered? " + activeNetworkMetered);
     }
