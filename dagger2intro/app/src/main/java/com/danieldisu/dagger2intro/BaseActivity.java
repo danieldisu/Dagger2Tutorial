@@ -15,4 +15,9 @@ public class BaseActivity extends AppCompatActivity {
     public SystemComponent getSystemComponent() {
         return ((Dagger2Application) getApplication()).getSystemComponent();
     }
+
+
+    protected Dagger2Application getApp() {
+        return (Dagger2Application) getApplication();
+    }
 }
